@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive site by Figma template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/commonStyles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#sectionCatalog">Catalog</a></li>
+                <li><a href="#sectionAdvantages">Our advantages</a></li>
+                <li><a href="#sectionSlider">Examples of work</a></li>
+            </ul>
+        </nav>
+
+        <!-- Burger-menu -->
+        <div class="burger-menu">
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+        </div>
+    </header>
+
+    <section id="sectionCatalog" class="catalog padding-top-bottom-section">
+        <div class="wrapper flex-column gap-section">
+            <h2>Catalog</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="img/img_flex-item.png" alt="img_flex-item">
+                    <div class="text_flex-item">
+                        <h3>Brief description</h3>
+                        <p class="description_flex-item">Description to reveal additional details</p>
+                        <p class="price">150 $/piece.</p>
+                        <button>Button</button>
+
+                    </div>
+
+                </div>
+                <div class="flex-item">
+                    <img src="img/img_flex-item.png" alt="img_flex-item">
+                    <div class="text_flex-item">
+                        <h3>Brief description</h3>
+                        <p class="description_flex-item">Description to reveal additional details</p>
+                        <p class="price">150 $/piece.</p>
+                        <button>Button</button>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img src="img/img_flex-item.png" alt="img_flex-item">
+                    <div class="text_flex-item">
+                        <h3>Brief description</h3>
+                        <p class="description_flex-item">Description to reveal additional details</p>
+                        <p class="price">150 $/piece.</p>
+                        <button>Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionAdvantages" class="advantages padding-top-bottom-section">
+        <div class="wrapper flex-column gap-section">
+            <h2>Our advantages</h2>
+            <div class="grid-container">
+                <div class="grid-item grid-item-1 flex_grid-item">
+                    <h3>01</h3>
+                    <p>A short description in two lines to add clarity and detail</p>
+                </div>
+                <div class="grid-item grid-item-2 flex_grid-item">
+                    <h3>02</h3>
+                    <p>A short description in two lines to add clarity and detail</p>
+                </div>
+                <div class="grid-item grid-item-3 flex_grid-item">
+                    <h3>03</h3>
+                    <p>A short description in two lines to add clarity and detail</p>
+                </div>
+                <div class="grid-item grid-item-4 flex_grid-item">
+                    <h3>04</h3>
+                    <p>A short description in two lines to add clarity and detail</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sectionSlider" class="slider padding-top-bottom-section">
+        <div class="wrapper flex-column gap-section">
+            <h2>Examples of work</h2>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/icePlanet.webp" alt="icePlanet">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/mars.webp" alt="mars">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/waterPlanet.webp" alt="waterPlanet">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper flex-column">
+            <div class="flex-container">
+                <a href="#">Consent to data processing</a>
+                <a href="#">Help Desk</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="flex-container">
+                <p>© nameofsite.com, 2024 | Company name</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

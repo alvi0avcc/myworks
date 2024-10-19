@@ -1,0 +1,31 @@
+/* General classes */
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #2e363e;
+    text-decoration: none;
+}
+
+.wrapper {
+    /* width: 61.45%; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    line-height: 133%;
+}
+
+.padding-top-bottom-section {
+    padding: 100px 0px;
+}
