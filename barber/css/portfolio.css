@@ -1,0 +1,40 @@
+
+
+.portfolio{
+    background-color: #999;
+    flex-direction: column;
+}
+
+.portfolio h2{
+    margin: 20px;
+    text-shadow: 1px 1px #fff;
+}
+
+.portfolio p{
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 80%;
+    height: 60%;
+}
+
+.swiper-slide{
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide picture{
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img{
+    height: 100%;
+    /* object-fit: contain; */
+}

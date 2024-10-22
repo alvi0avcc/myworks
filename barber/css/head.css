@@ -1,0 +1,56 @@
+.head{
+    background-color: #999;
+    flex-direction: column;
+    background-image: url('../img/0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #fff;
+    background-blend-mode: luminosity;
+}
+
+h1{
+    position: sticky;
+    top: 0px;
+    /* font-size: 8vw; */
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.head span{
+    color: red;
+}
+
+.head h1 span>span{
+    text-transform: lowercase;
+}
+
+.head p{
+    margin-top: 50px;
+    text-shadow: 2px 2px #000;
+}
+
+.head h1{
+    animation: skew 5s linear infinite;
+
+}
+
+@keyframes skew{
+    from{
+        transform: skewX(0deg);
+    }
+    25%{
+        transform: skewX(-3deg);
+    }
+
+    75%{
+        transform: skewX(3deg);
+    }
+    to{
+        transform: skewX(0deg);
+    }
+}
