@@ -9,16 +9,24 @@
     background-blend-mode: luminosity;
 }
 
-h1{
+.container-h1{
+    height: 4em;
     position: sticky;
-    top: 0px;
+    top: 10px;
+    margin: 50px;
+}
+
+h1{
+    /* position: sticky; */
+    /* top: 10px; */
     /* font-size: 8vw; */
     font-size: 4em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin: 50px;
+    /* margin: 50px; */
     text-shadow: 2px 2px #000;
+    transition: 0.5s;
 }
 
 .head span{

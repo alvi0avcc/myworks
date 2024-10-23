@@ -7,6 +7,10 @@
     color: var(--text-color);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #main{
     display: flex;
     flex-direction: column;
@@ -24,14 +28,23 @@
     display: flex;
 }
 
-h2{
+.container-h2{
     position: sticky;
-    top: 0px;
+    height: 3em;
+    position: sticky;
+    top: 10px;
+    margin: 40px;
+}
+
+h2{
+    /* position: sticky; */
+    /* top: 0px; */
     /* font-size: 5vw; */
     font-size: 3em;
     font-weight: 600;
     text-align: center;
-    margin: 40px;
+    /* margin: 40px; */
+    transition: 0.5s;
 }
 
 p{
