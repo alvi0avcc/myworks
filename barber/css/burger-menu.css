@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
-    margin-right: 10px;
+    padding-right: 10px;
     align-self: center;
     gap: 4px;
     grid-column: 4;
@@ -14,12 +14,23 @@
     height: 3px;
     background-color: #fff;
     border-radius: 2px;
+    box-shadow: 1px 1px #000;
 }
 
 .burger-menu-active{
     display: flex !important;
-    /* background-color: blueviolet; */
+    position: fixed;
+    right: 20px;
+    top: 35px;
     border-radius: 5px;
     padding: 5px;
     margin-top: 3px;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px #000;
+}
+
+.burger-menu-active>.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
 }

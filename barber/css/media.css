@@ -1,4 +1,17 @@
 @media screen {
+
+    h1{
+        font-size: 1.5em !important;
+
+    }
+    .container-h1{
+        top: 10px;
+        margin: 20px;
+    }
+    h2{
+        font-size: 1.5em !important;
+    }
+
     .burger-menu{
         display: flex;
     }
@@ -6,6 +19,32 @@
     .nav{
         display: none;
     }
+}
+
+@media screen  and (min-width: 365px){
+
+    h1{
+        font-size: 1.5em !important;
+    }
+    .container-h1{
+        top: 10px;
+        margin: 50px;
+    }
+    h2{
+        font-size: 1.5em !important;
+    }
+}
+
+@media screen  and (min-width: 450px){
+
+    h1{
+        font-size: 2em !important;
+    }
+    h2{
+        font-size: 1.5em !important;
+    }
+
+    
 
     .menu{
         gap: 10px;
@@ -15,6 +54,14 @@
 }
 
 @media screen and (min-width: 830px) {
+
+    h1{
+        font-size: 3em !important;
+    }
+    h2{
+        font-size: 2em !important;
+    }
+
     .burger-menu{
         display: none;
     }
@@ -31,6 +78,12 @@
 }
 
 @media screen and (min-width: 930px) {
+    h1{
+        font-size: 4em !important;
+    }
+    h2{
+        font-size: 3em !important
+    }
     .menu{
         gap: 10px;
         font-size: 1em;
