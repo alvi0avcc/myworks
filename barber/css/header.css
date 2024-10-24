@@ -8,19 +8,22 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: blueviolet;
+    background-color: #8a2be2;
+    text-shadow: 2px 2px #000;
 }
 
 header>.logo{
     justify-self: center;
+    color: #fff;
+    /* text-shadow: 1px 1px #000; */
     /* grid-area: 1 / 1 / 1 / 3; */
     z-index: 5;
 }
 
 header>.logo>p:first-child{
     font-size: 2em;
-    color: red;
-    text-shadow: 1px 1px #000;
+    color: #ff0000;
+    /* text-shadow: 2px 2px #000; */
     font-weight: 700;
 }
 
@@ -30,26 +33,30 @@ header>.logo>p+p{
     line-height: 150%;
 }
 
-header>.nav{
+.nav{
     /* grid-area: 1 / 3 / 1 / 5; */
     grid-column: 3 / span 2;
     justify-self: end;
     padding-right: 10px;
+    z-index: 100;
 }
 
-header .menu{
+.menu{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    color: #fff;
     font-size: 1.2em;
     font-weight: 700;
-    text-shadow: 1px 1px #fff;
+    text-shadow: 2px 2px #000;
+    transition: 0.25s;
 }
 
-header .menu a{
+.menu a{
     text-decoration: none;
 }
 
-header .menu a:hover{
-    color: #fff;
+.menu a:hover{
+    color: #ff0000;
     text-shadow: 1px 1px #000;
 }

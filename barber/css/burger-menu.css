@@ -1,0 +1,25 @@
+.burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    margin-right: 10px;
+    align-self: center;
+    gap: 4px;
+    grid-column: 4;
+}
+
+.burger-menu .burger-bar{
+    display: flex;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.burger-menu-active{
+    display: flex !important;
+    /* background-color: blueviolet; */
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 3px;
+}

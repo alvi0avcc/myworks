@@ -31,8 +31,13 @@ new IntersectionObserver(([entry]) => {
   if (!entry.isIntersecting) {
     // console.log('Sticky-active!');
     workElement2.style.fontSize = '1.5em';
+    workElement2.style.color = '#fff';
+    workElement2.style.textShadow =  '2px 2px #000';
+
   } else {
     workElement2.style.fontSize = '3em';
+    workElement2.style.color = '#000';
+    workElement2.style.textShadow =  'none';
   }
 }, options ).observe(sentinel2);
 
@@ -48,7 +53,30 @@ new IntersectionObserver(([entry]) => {
   if (!entry.isIntersecting) {
     // console.log('Sticky-active!');
     workElement3.style.fontSize = '1.5em';
+    workElement3.style.color = '#fff';
+    workElement3.style.textShadow =  '2px 2px #000';
   } else {
     workElement3.style.fontSize = '3em';
+    workElement3.style.color = '#000';
+    workElement3.style.textShadow =  'none';
   }
 }, options ).observe(sentinel3);
+
+// burger-menu
+
+const burger = document.querySelector('.burger-menu');
+const menu = document.querySelector('.nav');
+
+burger.addEventListener('click', ()=>{
+  // const menu = document.querySelector('.nav');
+  menu.classList.toggle('burger-menu-active');
+  // console.log(menu.classList);
+});
+
+document.addEventListener('scroll', ()=>{
+  menu.classList.remove('burger-menu-active');
+})
+
+// menu.addEventListener('click', ()=>{
+//   menu.classList.remove('burger-menu-active');
+// })
