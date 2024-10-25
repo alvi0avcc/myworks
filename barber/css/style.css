@@ -38,7 +38,7 @@ html{
 .container-h2{
     position: sticky;
     height: 3em;
-    top: 10px;
+    /* top: 10px; */
     margin: 40px;
 }
 

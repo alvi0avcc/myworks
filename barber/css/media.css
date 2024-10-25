@@ -1,10 +1,27 @@
+@media (orientation: landscape) {
+    .container-h1{
+        top: 10px;
+    }
+    .container-h2{
+        top: 10px;
+    }
+}
+
+@media (orientation: portrait) {
+    .container-h1{
+        top: 45px;
+    }
+    .container-h2{
+        top: 30px;
+    }
+}
+
 @media screen {
     .head-h1{
         font-size: 1.5em;
 
     }
     .container-h1{
-        top: 10px;
         margin: 20px;
     }
     h2{
@@ -26,7 +43,6 @@
         font-size: 1.5em;
     }
     .container-h1{
-        top: 10px;
         margin: 50px;
     }
     h2{
