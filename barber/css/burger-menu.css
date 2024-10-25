@@ -34,3 +34,18 @@
     flex-direction: column;
     text-align: end;
 }
+
+.burger-bar{
+    transition: 0.25s;
+}
+
+.burger-open .burger-bar:nth-child(1){
+    transform: translateY(6.5px) rotate(45deg);
+}
+.burger-open .burger-bar:nth-child(2){
+    /* display: none;   */
+    opacity: 0;
+}
+.burger-open .burger-bar:nth-child(3){
+    transform: translateY(-6.5px) rotate(-45deg);
+}

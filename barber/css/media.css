@@ -1,7 +1,6 @@
 @media screen {
-
-    h1{
-        font-size: 1.5em !important;
+    .head-h1{
+        font-size: 1.5em;
 
     }
     .container-h1{
@@ -9,63 +8,64 @@
         margin: 20px;
     }
     h2{
-        font-size: 1.5em !important;
+        font-size: 1.5em;
     }
-
     .burger-menu{
         display: flex;
     }
-
     .nav{
         display: none;
+    }
+    .portfolio p{
+        font-size: 1em;
     }
 }
 
 @media screen  and (min-width: 365px){
-
-    h1{
-        font-size: 1.5em !important;
+    .head-h1{
+        font-size: 1.5em;
     }
     .container-h1{
         top: 10px;
         margin: 50px;
     }
     h2{
-        font-size: 1.5em !important;
+        font-size: 1.5em;
+    }
+    .portfolio p{
+        font-size: 1.2em;
     }
 }
 
 @media screen  and (min-width: 450px){
 
-    h1{
-        font-size: 2em !important;
+    .head-h1{
+        font-size: 2em;
     }
     h2{
-        font-size: 1.5em !important;
+        font-size: 1.5em;
     }
-
-    
-
     .menu{
         gap: 10px;
         font-size: 0.8em;
         font-weight: 700;
     }
+    .portfolio p{
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (min-width: 830px) {
-
-    h1{
-        font-size: 3em !important;
+    .head-h1{
+        font-size: 3em;
     }
     h2{
-        font-size: 2em !important;
+        font-size: 2em;
     }
 
     .burger-menu{
         display: none;
     }
-
     .nav{
         display: flex;
     }
@@ -75,19 +75,25 @@
         font-size: 0.8em;
         font-weight: 700;
     }
+    .portfolio p{
+        font-size: 1.4em;
+    }
 }
 
 @media screen and (min-width: 930px) {
-    h1{
-        font-size: 4em !important;
+    .head-h1{
+        font-size: 4em;
     }
     h2{
-        font-size: 3em !important
+        font-size: 3em
     }
     .menu{
         gap: 10px;
         font-size: 1em;
         font-weight: 700;
+    }
+    .portfolio p{
+        font-size: 1.5em;
     }
 }
 

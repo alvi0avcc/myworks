@@ -1,5 +1,5 @@
 const stickyElement = document.getElementById('container-h1');
-const workElement = document.getElementById('head-h1');
+const workElement = document.querySelector('.head-h1');
 
 const sentinel = document.createElement('div');
 stickyElement.before(sentinel);
@@ -12,10 +12,9 @@ let options = {
 
 new IntersectionObserver(([entry]) => {
   if (!entry.isIntersecting) {
-    // console.log('Sticky-active!');
     workElement.style.fontSize = '1.5em';
   } else {
-    workElement.style.fontSize = '4em';
+    workElement.style.fontSize = '';
   }
 }, options ).observe(sentinel);
 
@@ -29,15 +28,9 @@ stickyElement2.before(sentinel2);
 
 new IntersectionObserver(([entry]) => {
   if (!entry.isIntersecting) {
-    // console.log('Sticky-active!');
     workElement2.style.fontSize = '1.5em';
-    // workElement2.style.color = '#fff';
-    // workElement2.style.textShadow =  '2px 2px #000';
-
   } else {
-    workElement2.style.fontSize = '3em';
-    // workElement2.style.color = '#000';
-    // workElement2.style.textShadow =  'none';
+    workElement2.style.fontSize = '';
   }
 }, options ).observe(sentinel2);
 
@@ -51,14 +44,9 @@ stickyElement3.before(sentinel3);
 
 new IntersectionObserver(([entry]) => {
   if (!entry.isIntersecting) {
-    // console.log('Sticky-active!');
     workElement3.style.fontSize = '1.5em';
-    // workElement3.style.color = '#fff';
-    // workElement3.style.textShadow =  '2px 2px #000';
   } else {
-    workElement3.style.fontSize = '3em';
-    // workElement3.style.color = '#000';
-    // workElement3.style.textShadow =  'none';
+    workElement3.style.fontSize = '';
   }
 }, options ).observe(sentinel3);
 
@@ -68,15 +56,11 @@ const burger = document.querySelector('.burger-menu');
 const menu = document.querySelector('.nav');
 
 burger.addEventListener('click', ()=>{
-  // const menu = document.querySelector('.nav');
   menu.classList.toggle('burger-menu-active');
-  // console.log(menu.classList);
+  burger.classList.toggle('burger-open');
 });
 
 document.addEventListener('scroll', ()=>{
   menu.classList.remove('burger-menu-active');
+  burger.classList.remove('burger-open');
 })
-
-// menu.addEventListener('click', ()=>{
-//   menu.classList.remove('burger-menu-active');
-// })

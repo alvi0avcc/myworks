@@ -1,1 +1,71 @@
+/* :root{
+    --text-color: #fff;
+} */
 
+*{
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* body{
+    width: 100vw;
+} */
+
+#main{
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    height: 900px;
+}
+
+#footer{
+    display: flex;
+    /* width: 100%; */
+}
+
+.container-h2{
+    position: sticky;
+    height: 3em;
+    top: 10px;
+    margin: 40px;
+}
+
+h2{
+    /* position: sticky; */
+    /* top: 0px; */
+    /* font-size: 5vw; */
+    /* font-size: 3em; */
+    font-weight: 600;
+    text-align: center;
+    /* margin: 40px; */
+    transition: 0.5s;
+}
+
+p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.p-container{
+    width: 60%;
+}
+
+.divider{
+    width: 10%;
+    height: 0.5%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+}

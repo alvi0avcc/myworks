@@ -5,6 +5,12 @@
     height: 100%;
 }
 
+.services h2{
+    color: red;
+    text-shadow: 1px 1px #000, 2px 0px #fff, -2px 0px #fff, 0px 2px #fff, 0px -2px #fff;
+
+}
+
 .services-items{
     display: flex;
     flex-direction: row;
@@ -21,7 +27,16 @@
     justify-content: space-between;
     width: 300px;
     height: 650px;
+    max-height: 100vh;
     background-color: #999;
+    border-radius: 20px;
+}
+
+.services-item>img{
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 20px;
+    align-self: center;
 }
 
 .services-item>figcaption:nth-child(2){
