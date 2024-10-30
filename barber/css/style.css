@@ -63,9 +63,34 @@ p{
 }
 
 .divider{
-    width: 10%;
-    height: 0.5%;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 20px;
+    display: flex;
+    position: relative;
+    /* margin-top: -20px; */
+    /* margin-bottom: -20px; */
+    height: 0px;
+    justify-content: space-between;
 }
+
+.divider>img{
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+}
+
+.img-left{
+    position: relative;
+    left: -10px;
+    transform: rotate(90deg);
+    
+}
+
+.img-right{
+    position: relative;
+    right: -10px;
+    transform: rotate(-90deg);
+}
+
+a{
+    cursor: pointer;
+}
+

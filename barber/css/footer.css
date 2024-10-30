@@ -1,0 +1,35 @@
+.sectionContacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: gray;
+}
+
+.sectionContacts ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+ .sectionContacts svg {
+    height: 30px;
+    width: 30px;
+}
+
+.sectionContacts p:first-of-type{
+    color: red;
+    font-size: 0.8em;
+}
+
+.sectionContacts p:last-child{
+    font-size: 0.5em;
+    color: grey;
+}
+
+a:hover svg{
+    transform: scale(1.1);
+}
+
+a:active svg{
+    transform: scale(0.9);
+}
