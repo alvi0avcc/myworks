@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.dd{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 1000px;
+    background-color: transparent;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    border: 1px solid black;
+}
+
+    .container{
+        display: flex;
+        width: 100%;
+        border: 1px solid red;
+        flex-direction: column;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        rotate:  y -50deg;
+    }
+
+    .slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        min-height: 50px;
+        background-color: aqua;
+        border-radius: 25px;
+        offset-path: circle(300px);
+        offset-rotate: 0deg;
+        transform: rotateY(50deg);
+        animation: move1 5s linear infinite reverse;
+    }
+
+    .slide1{
+        background-color: red;
+        animation-delay: 0s;
+    }
+
+    .slide2{
+        background-color: green;
+        animation-delay: 0.5s;
+    }
+
+    .slide3{
+        background-color: blue;
+        animation-delay: 1s;
+
+    }
+    .slide4{
+        background-color: lime;
+        animation-delay: 1.5s;
+
+    }
+    .slide5{
+        background-color: yellow;
+        animation-delay: 2s;
+
+    }
+    .slide6{
+        background-color: violet;
+        animation-delay: 2.5s;
+
+    }
+    .slide7{
+        background-color: brown;
+        animation-delay: 3s;
+
+    }
+    .slide8{
+        background-color: aqua;
+        animation-delay: 3.5s;
+
+    }
+    .slide9{
+        background-color: bisque;
+        animation-delay: 4s;
+
+    }
+    .slide10{
+        background-color: cadetblue;
+        animation-delay: 4.5s;
+
+    }
+    .slide11{
+        background-color: coral;
+        animation-delay: 5s;
+
+    }
+    .slide12{
+        background-color: darkmagenta;
+        animation-delay: 5.5s;
+
+    }
+
+    @keyframes move1 {
+        from{
+            offset-distance: 0%;
+            /* transform: translateZ(0); */
+            /* rotate: y 0; */
+        }
+        50%{
+            /* rotate:  y 45deg; */
+            /* transform: scale(0.5); */
+            /* transform: translateZ(-500px); */
+        }
+        to{
+            /* rotate: y 0; */
+            offset-distance: 100%;
+            /* transform: scale(1); */
+            /* transform: translateZ(0); */
+        }
+    }
+
+    /* @keyframes move-c {
+        from{
+            rotate: 0deg;
+        }
+        to{
+            rotate: 360deg;
+        }
+        
+    } */
+
+</style>
+<body>
+
+    <div class="dd">
+
+        <div class="container">
+            <div style="font-size: 2em;left: 50%; top: 45%; position: relative;">
+                <p>Yamanote Line</p>
+            </div>
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+            <div class="slide slide4">4</div>
+            <div class="slide slide5">5</div>
+            <div class="slide slide6">6</div>
+            <div class="slide slide7">7</div>
+            <div class="slide slide8">8</div>
+            <div class="slide slide9">9</div>
+            <div class="slide slide10">10</div>
+            <div class="slide slide11">11</div>
+            <div class="slide slide12">12</div>
+    
+    
+        </div>
+    </div>
+    
+
+    <script>
+        const slide = document.querySelector('.slide');
+
+        let i =0;
+
+        // setInterval(() => {
+        //     let x= 250 + 150*Math.cos(i);
+        //     let y= 250 + 150*Math.sin(i);
+
+        //     // console.log(i);
+        //     // console.log('x=',x);
+        //     // console.log('y=',y);
+            
+        //     slide.style.left=x+'px';
+        //     slide.style.top=y+'px';
+
+        //     i +=0.1;
+                
+        //     }, 100);
+
+
+
+
+    </script>
+</body>
+
+</html>
