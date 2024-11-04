@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        --size: 500px;
+        --scale: 1;
+        --base-radius: 40%;
+        --radius: calc( var(--base-radius) * ( 1 - var(--scale) / 20 ) );
+    }
+
+    .back-container{
+        background-color: green;
+        width:  calc( var(--size) * var(--scale) );
+    }
+
+    .base-container{
+        /* margin-left: -10%; */
+        margin-left: calc( -10% * var(--scale) );
+        display: flex;
+        justify-content: center;
+        width: calc( var(--size) * var(--scale) );
+        max-width: 100%;
+        height: calc( var(--size) * var(--scale) );
+        background-color: transparent;
+        perspective: 500px;
+        transform-style: preserve-3d;
+    }
+
+    .container-3d{
+        display: flex;
+        width: 100%;
+        /* border: 1px solid red; */
+        flex-direction: column;
+        transform-style: preserve-3d;
+        rotate:  y -50deg;
+    }
+
+    /* logo text */
+    .container-3d .logo{
+        /* padding-left: 20%; */
+        padding-left: calc( 20% * var(--scale) );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        min-height: calc( var(--size) * var(--scale) );
+        transform: rotateY(-10deg);
+    }
+
+    .slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc( 100px / ( 1 - var(--scale) / 10 ) );
+        min-height: 50px;
+        background-color: #000;
+        color: #fff;
+        font-weight: 600;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 25px;
+        /* offset-path: circle( 40% ); */
+        offset-path: circle( var(--radius) );
+        offset-rotate: 0deg;
+        transform: rotateY(50deg);
+        /* transition: 50ms; */
+    }
+
+</style>
+
+
+<body>
+
+
+    <div class="back-container">
+        <div class="base-container">
+            <div class="container-3d">
+                <div class="logo">
+                    <p>LOGO</p>
+                    <p>Yamanote Line</p>
+                </div>
+                <!-- <div class="slide">1</div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const container = document.querySelector('.container-3d');
+
+
+    // function for Create slides
+    function SlidesCreate( quantity = 1, container = document.querySelector('body') ){
+        // console.log(container);
+
+        let distanse = 100 / quantity;
+
+
+        
+        for (let i=0; i< quantity; i++){
+            const slide = document.createElement('div');
+            slide.classList.add('slide');
+            slide.style.offsetDistance = distanse * i + '%';
+
+            const slideInside1 = document.createElement('div');
+            slideInside1.innerHTML='logo';
+            const slideInside2 = document.createElement('div');
+            slideInside2.innerHTML=i+1;
+
+            slide.appendChild(slideInside1);
+            slide.appendChild(slideInside2);
+
+            container.appendChild(slide);
+        }
+        
+    }
+
+    // function for move slides
+    function MoveSlides( step = 1,  container = document.querySelector('body') ){
+        let slides = document.querySelectorAll('.slide');
+
+        slides.forEach(element => {
+            let distanse = Number( element.style.offsetDistance.slice(0, -1) );
+            distanse += step;
+            distanse += "%";
+            // console.log(distanse);
+            element.style.offsetDistance = distanse;
+        });
+    }
+
+
+    // Create slides
+        SlidesCreate( 20 , container );
+
+    // move slides
+    setInterval(() => {
+
+        MoveSlides( -1, container );
+        
+    }, 50);
+
+    </script>
+</body>
+
+</html>
