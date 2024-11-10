@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5E97AD;
+    height: 175px;
+}
+
+header .logo{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-left: 55px;
+}
+
+header .logo img{
+    border: 1px solid black;
+    height: clamp(3em, 8vw, 100px );
+    width: clamp(3em, 8vw, 100px );
+
+}
+
+header .logo p{
+    font-size: clamp(1.5em, 4vw, 3.4em );
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+header .logo sup{
+    font-size: 0.25em;
+    vertical-align: text-top;
+    letter-spacing: normal
+    ;
+}
+
+nav {
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-self: center;
+    list-style: none;
+    font-size: clamp( 0.5em, 3vw, 2.5em);
+    font-weight: 600;
+    color: #fff;
+}
+
+nav li {
+    padding: 0 0.5em 0 0.5em;
+}
+
+nav li:not(:first-child){
+    border-left: 3px solid #fff;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: clamp(1.5em, 3vw, 4em);
+}
+
+.block-languages-select{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1em, 2vw, 2.5em);
+    align-items: center;
+}
+
+.block-languages-select .custom-select{
+    height: 50px;
+}
+
+.block-languages-select .button-select{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: clamp(2em, 4vw, 4em);
+    font-size: clamp(1em, 2vw, 2.5em);
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.block-languages-select .button-select:hover{
+    background-color: #5E97AD;
+    cursor: pointer;
+}
+
+.block-list-select{
+    display: none;
+}
+
+.block-languages-select .block-list-select ul{
+    list-style: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.show{
+    display: block;
+}
+
+.block-languages-select .block-list-select li{
+    display: flex;
+    gap: 5px;
+    padding: 5px 20px 5px 20px;
+}
+
+.custom-select img{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+}
+
+.custom-select li:hover{
+    background-color: #5E97AD;
+    cursor: pointer;
+}
+
+.custom-select li:active{
+    transform: scale(0.95);
+    border-radius: 10px;
+    transition: 0.1s;
+}
