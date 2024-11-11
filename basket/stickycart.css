@@ -1,0 +1,23 @@
+.cart{
+    box-sizing: border-box;
+    height: 100px;
+    background-color: bisque;
+    position: sticky;
+    top: 84px;
+    display: none;
+    transition: 1s;
+
+}
+
+.cart-show{
+    display: flex;
+    top: 0;
+    /* animation: move-cart, ; */
+    transform: translateY(84px);
+    transition: 1s;;
+}
+
+/* @keyframes move-cart {
+    from
+    
+} */
