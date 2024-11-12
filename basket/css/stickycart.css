@@ -1,0 +1,81 @@
+@media screen {
+    .container{
+        top: unset;
+        bottom: 0;
+    }
+    .cart{
+        bottom: -84px;
+    }
+    .cart-show{
+        bottom: 0px;
+    }
+    .cart .cart-button span{
+        display: none;
+    }
+    .cart .cart-button{
+        width: 42px;
+        padding: 0;
+    }
+    .description{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and ( min-width: 450px){
+    .container{
+        top: 84px;
+        bottom: unset;
+    }
+    .cart{
+        top: -84px;
+    }
+    .cart-show{
+        top: 0px;
+    }
+    .cart .cart-button span{
+        display: block;
+    }
+    .cart .cart-button{
+        width: 230px;
+        padding: 0 32px 0 32px;
+    }
+}
+
+.container{
+    box-sizing: border-box;
+    width: 100%; 
+    position: fixed;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.cart{
+    box-sizing: border-box;
+    height: 84px;
+    width: 100%;
+    background-color: bisque;
+    position: relative;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+
+.cart>div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart .cart-button{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    background-color: #FECC11;
+    border-radius: 21px;
+    font-weight: 600;
+    text-decoration: none;
+}
