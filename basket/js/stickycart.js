@@ -1,6 +1,6 @@
 function StickyCart( nameElement = 'body', basePoint = 590 ){
     const mainElement = document.querySelector(nameElement);
-    console.log(mainElement);
+    // console.log(mainElement);
     const container = document.createElement('div');
     container.classList.add('container');
     const cart = document.createElement('div');
@@ -22,6 +22,7 @@ function StickyCart( nameElement = 'body', basePoint = 590 ){
         </a>
     `;
 
+    
     container.appendChild(cart);
     mainElement.prepend(container);
 
@@ -36,3 +37,5 @@ function StickyCart( nameElement = 'body', basePoint = 590 ){
 }
 
 StickyCart( 'body', 250 );
+
+console.log(1.15 + 2.30);
